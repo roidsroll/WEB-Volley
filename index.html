@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volley Ball JP One</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#176B1D] text-white shadow-lg">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="image.png" width="50" height="50" alt="">
+        <h1 class="text-2xl font-bold">Volley Ball JP One</h1>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="#home" class="hover:text-[#F4C115] transition">Beranda</a></li>
+          <li><a href="#schedule" class="hover:text-[#F4C115] transition">Jadwal</a></li>
+          <li><a href="#gallery" class="hover:text-[#F4C115] transition">Galeri</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1Cc2K0j4Ah9AmUmOhY_IJstNnffzVYb40dRJUVwcfT2bM6A/viewform?usp=header" class="hover:text-[#F4C115] transition">Daftar</a></li>
+          <li><a href="#contact" class="hover:text-[#F4C115] transition">Kontak</a></li>
+        </ul>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#176B1D] pb-4 px-4">
+      <ul class="flex flex-col space-y-3">
+        <li><a href="#home" class="block hover:text-[#F4C115] transition">Beranda</a></li>
+        <li><a href="#schedule" class="block hover:text-[#F4C115] transition">Jadwal</a></li>
+        <li><a href="#gallery" class="block hover:text-[#F4C115] transition">Galeri</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1Cc2K0j4Ah9AmUmOhY_IJstNnffzVYb40dRJUVwcfT2bM6A/viewform?usp=header" class="block hover:text-[#F4C115] transition">Daftar</a></li>
+        <li><a href="#contact" class="block hover:text-[#F4C115] transition">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-[500px] flex items-center justify-center text-center text-white overflow-hidden">
+    <img src="bg-01.jpg" alt="Volley Background" class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#176B1D]/90 to-transparent z-10"></div>
+
+    
+    <!-- Konten Hero -->
+    <div class="relative z-30 px-4 animate-fadeIn" data-aos="fade-down">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Volleyball JP ONE</h2>
+        <p class="text-xl mb-8">Latih kemampuan volimu bersama kami!</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1Cc2K0j4Ah9AmUmOhY_IJstNnffzVYb40dRJUVwcfT2bM6A/viewform?usp=header" class="bg-[#F4C115] hover:bg-[#E0B010] text-[#176B1D] font-bold py-3 px-8 rounded-full transition transform hover:scale-105">
+            Daftar Sekarang
+        </a>
+    </div>
+    
+</section>
+
+<!-- Schedule Section -->
+<section id="schedule" class="py-16 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-[#176B1D] mb-12" data-aos="fade-down" >JADWAL LATIHAN</h2>
+
+    <!-- Kotak Jadwal & Map digabung -->
+    <div class="max-w-3xl mx-auto bg-[#176B1D]/10 rounded-lg shadow-lg overflow-hidden border-l-4 border-[#F4C115]" data-aos="fade-down">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-[#176B1D]">Kamis</h3>
+        <p class="text-gray-700 mt-2">
+          <i class="fas fa-clock text-[#F4C115] mr-2"></i> 15:00 - 17:00 WIB
+        </p>
+        <p class="text-gray-700">
+          <i class="fas fa-map-marker-alt text-[#F4C115] mr-2"></i> Lapangan Banteng Pintu Timur
+        </p>
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-[#176B1D]">Sabtu</h3>
+        <p class="text-gray-700 mt-2">
+          <i class="fas fa-clock text-[#F4C115] mr-2"></i> 08:00 - 10.00 WIB
+        </p>
+        <p class="text-gray-700">
+          <i class="fas fa-map-marker-alt text-[#F4C115] mr-2"></i> Lapangan Banteng Pintu Timur
+        </p>
+      </div>
+
+      <!-- Embedded Google Maps di bawah jadwal -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!4v1752990525159!6m8!1m7!1sWH1ojq5Z4TqTHEygo6ISDw!2m2!1d-6.169061290731396!2d106.8361394619131!3f250.91478867667513!4f-15.037657413067507!5f0.7820865974627469" 
+        width="100%" 
+        height="300" 
+        class="w-full border-t border-gray-300"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-[#176B1D] mb-12" data-aos="fade-down">GALERI KEGIATAN</h2>
+
+    <!-- Masonry Layout -->
+    <div class="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+      <img src="gallery-1.jpg" data-aos="fade-down" class="w-full rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out">
+      <img src="gallerry-2.jpg" data-aos="fade-down" class="w-full rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out">
+      <img src="galeri-3.jpg" data-aos="fade-down" class="w-full rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out">
+      <img src="galeri-4.jpg" data-aos="fade-down" class="w-full rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out">
+      <img src="galeri-5.jpg" data-aos="fade-down" class="w-full rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out">
+      <img src="galeri-.jpg" data-aos="fade-down" class="w-full rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Quick Tools Section -->
+  <section id="for-all" class="py-16 bg-gray-100 ">
+    <div class="container mx-auto px-4 py-4 ">
+      <h2 class="text-3xl font-bold text-center text-[#176B1D] mb-12" data-aos="fade-down">INTERACTIVE FITURES FREE FOR YOU!!!</h2>
+         <div class="relative overflow-hidden rounded-lg shadow-xl">
+           <div class="text-center py-3">
+    <h1 class="text-3xl font-bold text-[#176B1D] mb-6" data-aos="fade-down">Kalkulator Digital</h1>
+    <button id="openModal" data-aos="fade-left" class="bg-[#F4C115] text-[#176B1D] px-8 py-8 font-bold rounded hover:bg-yellow-400 transition">
+        <i class="fas fa-calculator"></i>
+    </button>
+  </div>
+  <div class="text-center py-3">
+    <h1 class="text-3xl font-bold text-[#176B1D] mb-6" data-aos="fade-down">Games</h1>
+    <button id="openKodamModal" data-aos="fade-right" class="bg-[#F4C115] text-[#176B1D] px-8 py-8 font-bold rounded hover:bg-yellow-400 transition">
+        <i class="fas fa-gamepad"></i>
+    </button>
+  </div>
+
+  <div class="text-center py-3">
+    <h1 class="text-3xl font-bold text-[#176B1D] mb-6" data-aos="fade-down" >Source Code</h1>
+    <a href="https://github.com/roidsroll/Bomb-Defuse.git" data-aos="fade-left" class="bg-[#F4C115] text-[#176B1D] px-2 py-2 font-bold rounded hover:bg-yellow-400 transition">
+        <i class="fas fa-terminal"></i>
+    </a>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black/50 hidden z-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl p-6 w-[400px] md:w-[500px] shadow-2xl relative">
+
+      <button id="closeModal" class="absolute top-2 right-3 text-xl text-gray-600 hover:text-red-600">&times;</button>
+      <h2 class="text-xl font-bold text-center text-[#176B1D] mb-4">Kalkulator</h2>
+      
+      <input type="text" id="display" class="w-full border rounded px-3 py-2 mb-4 text-right text-xl" readonly />
+
+      <div class="grid grid-cols-4 gap-2">
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">/</button>
+
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">*</button>
+
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">-</button>
+
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button class="btn">C</button>
+        <button class="btn">+</button>
+
+        <button class="col-span-4 bg-[#176B1D] hover:bg-green-700 text-white py-2 rounded" id="equal">=</button>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Kodam -->
+<div id="kodamModal" class="fixed inset-0 bg-black/50 hidden z-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl p-6 w-[400px] md:w-[500px] shadow-2xl relative">
+    <button id="closeKodamModal" class="absolute top-2 right-3 text-xl text-gray-600 hover:text-red-600">&times;</button>
+    <h2 class="text-2xl font-bold text-center text-[#176B1D] mb-4">Tebak Kodammu 🧙‍♂️</h2>
+
+    <input type="text" id="namaUser" placeholder="Masukkan nama kamu" class="w-full border rounded px-4 py-2 mb-4" />
+
+    <button id="tebakBtn" class="bg-[#176B1D] hover:bg-green-700 text-white w-full py-2 rounded font-bold mb-4">
+      Tebak Kodam!
+    </button>
+
+    <div id="hasilKodam" class="text-center text-xl font-bold text-[#176B1D]"></div>
+  </div>
+</div>
+
+
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="bg-[#0E4A14] text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">VOLLEYBALL JP ONE</h3>
+          <p>SMK Jakarta Pusat 1 , Jl. Abdul Muis No.45, Petojo Sel., Kecamatan Gambir, Jakarta, Daerah Khusus Ibukota Jakarta 10160</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">MEDIA SOSIAL</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/volleyballjpone?igsh=bmRncjB2Nm4wYXIz" class="bg-[#F4C115] text-[#176B1D] w-10 h-10 rounded-full flex items-center justify-center hover:bg-white transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-[#176B1D] mt-8 pt-8 text-center">
+        <p>&copy; 2025 Eskul Volley SMA Contoh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+    <script>
+    const modal = document.getElementById('modal');
+    const openModal = document.getElementById('openModal');
+    const closeModal = document.getElementById('closeModal');
+    const display = document.getElementById('display');
+    const buttons = document.querySelectorAll('.btn');
+    const equal = document.getElementById('equal');
+
+    openModal.onclick = () => modal.classList.remove('hidden');
+    closeModal.onclick = () => modal.classList.add('hidden');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.textContent;
+        if (val === 'C') {
+          display.value = '';
+        } else {
+          display.value += val;
+        }
+      });
+    });
+
+    equal.onclick = () => {
+      try {
+        display.value = eval(display.value);
+      } catch {
+        display.value = 'Error';
+      }
+    };
+  </script>
+
+    <style>
+    .btn {
+      @apply bg-gray-200 text-xl font-bold py-2 rounded hover:bg-gray-300 transition;
+    }
+  </style>
+
+  <script>
+  const kodamModal = document.getElementById('kodamModal');
+  const openKodamModal = document.getElementById('openKodamModal');
+  const closeKodamModal = document.getElementById('closeKodamModal');
+  const tebakBtn = document.getElementById('tebakBtn');
+  const hasilKodam = document.getElementById('hasilKodam');
+
+  const daftarKodam = [
+    "Naga Hitam", "Kadal Bintit", "Buaya Kali", 
+    "Rajawali Merah", "Buaya Sakti", "Elang Emas",
+    "Ular Api", "Monyet Petir", "Banteng Baja", "Kuda Petir"
+  ];
+
+  openKodamModal.onclick = () => {
+    kodamModal.classList.remove('hidden');
+    hasilKodam.innerText = '';
+  };
+
+  closeKodamModal.onclick = () => kodamModal.classList.add('hidden');
+
+  tebakBtn.onclick = () => {
+    const nama = document.getElementById('namaUser').value.trim();
+    if (nama === '') {
+      hasilKodam.innerText = "Masukkan nama dulu yaa 😅";
+      return;
+    }
+    const randomKodam = daftarKodam[Math.floor(Math.random() * daftarKodam.length)];
+    hasilKodam.innerText = `${nama}, kodammu adalah: ${randomKodam} 💥`;
+  };
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
